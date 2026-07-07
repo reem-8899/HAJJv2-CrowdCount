@@ -1,0 +1,132 @@
+# HAJJv2-CrowdCount Annotation Guidelines
+
+Version 1.0
+
+---
+
+# Purpose
+
+These guidelines define the rules followed during manual annotation of the HAJJv2-CrowdCount dataset.
+
+The objective is to ensure that all annotators apply identical counting criteria, minimizing subjectivity and improving annotation consistency.
+
+---
+
+# General Rule
+
+The annotation target is the total number of visible people in each sampled frame.
+
+Each valid person contributes exactly one count.
+
+---
+
+# Counting Rules
+
+## Rule 1 — Count only clearly visible people
+
+A person should be counted only when the appearance is sufficiently clear for reliable identification.
+
+---
+
+## Rule 2 — Full body visibility
+
+Only people whose full body is visible inside the image are counted.
+
+People entering or leaving the frame are counted only while their complete body remains visible.
+
+---
+
+## Rule 3 — One person equals one count
+
+Every valid person contributes exactly one count regardless of clothing, posture, or walking direction.
+
+---
+
+## Rule 4 — Occlusion
+
+Do not count people who are completely hidden by other pedestrians.
+
+If a person becomes visible in a later frame, that person may then be counted.
+
+---
+
+## Rule 5 — Partial visibility
+
+Do not count:
+
+- half bodies
+- cropped bodies
+- people outside the image boundaries
+
+---
+
+## Rule 6 — Perspective distortion
+
+People that appear only as indistinguishable distant objects due to severe perspective distortion should not be counted.
+
+Only clearly distinguishable individuals are included.
+
+---
+
+## Rule 7 — Entering the frame
+
+A person entering the image should not be counted until the entire body becomes visible.
+
+---
+
+## Rule 8 — Leaving the frame
+
+A person leaving the image should no longer be counted once the body is no longer completely visible.
+
+---
+
+## Rule 9 — Dense crowds
+
+In dense crowd regions:
+
+- Count only distinguishable people.
+- Ignore completely hidden individuals.
+- Avoid estimating invisible people.
+
+---
+
+## Rule 10 — Camera angle
+
+Different camera viewpoints may produce varying visibility conditions.
+
+Apply the same counting rules regardless of:
+
+- viewing angle
+- camera height
+- crowd density
+
+---
+
+# Verification Procedure
+
+Every frame is counted twice by the same annotator.
+
+If the two counts differ:
+
+1. Reopen the frame.
+2. Repeat the counting process.
+3. Resolve discrepancies through manual verification.
+4. Record the final verified count.
+
+---
+
+# Annotation Checklist
+
+Before saving a count, verify:
+
+✓ Every counted person is clearly visible.
+
+✓ No person has been counted twice.
+
+✓ People outside the frame are excluded.
+
+✓ Occluded individuals are handled consistently.
+
+✓ Entering and leaving people follow the visibility rules.
+
+✓ The final count has been verified.
