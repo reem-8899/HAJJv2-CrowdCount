@@ -1,5 +1,20 @@
 # HAJJv2-CrowdCount
 
+## Original Dataset
+
+This repository contains annotations only. The original HAJJv2 videos 
+are not redistributed here and remain subject to their original terms.
+
+**To download the original HAJJv2 videos:**
+
+1. Visit the official dataset page:  
+   https://github.com/KAU-Smart-Crowd/HAJJv2_dataset
+
+2. Download the RAR file directly:  
+   https://github.com/KAU-Smart-Crowd/HAJJv2_dataset/releases/download/v1.0.0/HAJJv2.Dataset.rar
+
+3. Extract the RAR file using WinRAR or 7-Zip
+
 ## Overview
 
 **HAJJv2-CrowdCount** is a frame level crowd count annotation benchmark built upon the HAJJv2 surveillance video dataset. The benchmark provides manually verified ground truth crowd counts for evaluating crowd counting algorithms under challenging real world Hajj scenarios.
